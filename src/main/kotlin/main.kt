@@ -36,7 +36,7 @@ fun main() = application {
         )
 
 
-            newEmployee()
+            newEmployee(viewModel = EmployeeViewModel())
 
 
 
