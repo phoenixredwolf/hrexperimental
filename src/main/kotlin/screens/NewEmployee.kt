@@ -19,6 +19,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import navcontroller.NavController
 import screens.NumberDefaults.DOBMASK
 import screens.NumberDefaults.DOB_INPUT_LENGTH
 import screens.NumberDefaults.PHONEMASK
@@ -28,11 +29,13 @@ import screens.NumberDefaults.RATE_INPUT_LENGTH
 import screens.NumberDefaults.SSNMASK
 import screens.NumberDefaults.SSN_INPUT_LENGTH
 import util.MaskVisualTransformation
+import viewmodel.EmployeeViewModel
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun newEmployee(
-    viewModel: EmployeeViewModel
+    viewModel: EmployeeViewModel,
+    navController: NavController
 ) {
 
     // Focus variables

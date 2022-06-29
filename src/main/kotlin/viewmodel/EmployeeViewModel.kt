@@ -1,4 +1,4 @@
-package screens
+package viewmodel
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -8,11 +8,8 @@ import util.ViewModel
 
 class EmployeeViewModel : ViewModel() {
 
-    val firstName = mutableStateOf("")
-    val dateofbirth = mutableStateOf("")
-
     var employee: MutableState<Employee> = mutableStateOf(Employee(
-        firstname = firstName.toString(),
+        "",
         null,
         "",
         null,

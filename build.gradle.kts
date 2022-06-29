@@ -31,6 +31,9 @@ dependencies {
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+
+    // Mysql dependency
+    implementation("mysql:mysql-connector-java:8.0.29")
 }
 
 tasks.test {
